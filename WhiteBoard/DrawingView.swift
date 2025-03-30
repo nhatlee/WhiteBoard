@@ -84,6 +84,7 @@ struct DrawingView: View {
                 context.stroke(path, with: .color(line.color), lineWidth: line.width)
             }
         }
+        .background(viewModel.selectedColor == .white ? .black : .white)
         .gesture(
             DragGesture(minimumDistance: 0, coordinateSpace: .local)
                 .onChanged { value in

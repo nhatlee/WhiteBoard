@@ -17,7 +17,7 @@ final class DrawingViewModel {
     
     private let engine = DrawingEngine()
     
-    var selectedColor: Color = .blue
+    var selectedColor: Color = .white
     var selectedWidth: CGFloat = 6
     
     
